@@ -1,0 +1,52 @@
+1-
+testanto x a x
+a)
+log2(13) in Z 23
+2x ≡ 13 (mod 23)
+
+2^1 mod 23 = 2
+2^2 mod 23 = 4
+.
+.
+.
+2^7 mod 23 = 13
+
+logo temos log2(13) (congruencia) 7 mod 23
+
+b)
+log10(22) in Z 47
+
+10^1 mod 47 = 10
+10^2 mod 47 = 6
+.
+.
+.
+10^23 mod 47 = 22
+
+logo log10(22) (congruencia) 23 mod 47
+
+
+c)
+log627(608) in Z941
+
+627^x mod 941 = 608
+x = 608
+
+logo
+log627(608) (congruencia) 608 mod 941
+
+....................................
+
+2- p = 1373;  g = 2; A= 974; b = 871
+
+B = g^b mod n = 2^871 mod 1373 = 805
+
+secret = A^b mod n = 974^871 mod 1373 = 397
+
+secret = B^a mod n <=> 397 = 805^a mod 1373 <=> a = 587
+
+------------------------------------------------
+3-
+p(large prime); g(generator); xi(scret part); g^x mod p (sent part)
+
+Se eles enviarem x^g mod p, nao terao garntia de conseguir mais tarde chegar ao mesmo valor "segredo" (os casos em que consigam o mesmo valor é minusculo) impedindo assim a utilizaçao de encriptaçao para se comunicarem
