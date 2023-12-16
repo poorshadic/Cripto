@@ -1,0 +1,24 @@
+1-
+fi(n) = (p-1)(q-1)
+n(77) pode ser decomposto em 2 primos 7 e 11 que serao os valores de p e q
+fi(n) = 60
+
+e*d (congruencia) 1 mod 60 == 13*d (congruencia) 1 mod 60
+
+Apos um metodo de tentativa encontramos o primeiro numero divisivel por 13 com resto 1 quando dividido por 60 sendo ele 481 que é formado por 13 * 37, logo 37 sera o valor de d
+
+M = C^d mod(n) = 20^37 mod(77) = 48
+-----------------------------------
+2-
+fi(n) = (53-1) * (59-1) = 3016
+
+e*d = 1 mod(fi(n)) 
+65 * d (congruencia) 1 mod (3016)
+d = 2345
+
+---------------------- 
+3-
+Gerar um novo par de chaves sem gerar um novo modus (não)? é seguro, pois uma vez que d foi "publico" num certo momento qualquer pessoa teve acesso a (e, n, d) conseguiria reduzir bastante os possiveis numeros de ϕ(n) (facilita mas supostamente continua bastante difficil) possibilitando o encontro de p e q
+--------------------------------
+4- na teoria seria uma pratica segura uma vez que apenas (e, n) sao conhecidos e n é um numero grande dificil de fatorizar, contudo num caso expecifico como a encriptaçao +e de uma string bastante pequena sendo ela uma sequencia de 9 numeros sem uma boa adiçao de padding se um atacante tiver algum conhecimento do tipo da mensagem ou neste caso chega o tamanho da mesma é relativamente facil testar as combinaçoes de string desse tamanho e encriptar com (e) uma vez que é publica e fazer comparaçao de ciphertexts
+-------------------------------------
