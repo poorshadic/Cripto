@@ -8,12 +8,12 @@
 O objetivo é provar que $ (m_{1},m_{2}) = (m_{1}', m_{2}') $
 
 Temos que:
-$ m_{1}' = x_{t} ^{-1} c_{1} $
-$ m_{2}' = y_{t} ^{-1} c_{2} $
+$ m_{1}' = x_{T} ^{-1} c_{1} $
+$ m_{2}' = y_{T} ^{-1} c_{2} $
 
 Temos que: 
 $c_{1} = x_{S}m_{1} $ -> resolver em ordem a $m_{1} -> m_{1} = x_{S}^{-1}c_{1}$
-$c_{2} = y_{S}m_{1} $ -> resolver em ordem a $m_{1} -> m_{1} = y_{S}^{-1}c_{1}$
+$c_{2} = y_{S}m_{2} $ -> resolver em ordem a $m_{2} -> m_{2} = y_{S}^{-1}c_{2}$
 
 Considerando que:
 
@@ -22,9 +22,12 @@ $ S = (x_{S},y_{S}) = kQ_{A} = kn_{A}P $
 $ R = kP $
 $ T = (x_{T}, y_{T}) = n_{A}R = n_{A}kP $
 
-Então $ S = P = n_{A}kP$.
+Então $ S = T = n_{A}kP$.
 
-        $(x_{n_{A}kP}^{-1} c_{1}) $
+$ (m_{1},m_{2}) = (m_{1}', m_{2}') $
+$ (x_{S}^{-1}c_{1},  y_{S}^{-1}c_{2}) = (x_{T}^{-1}c_{1},  y_{T}^{-1}c_{2}) $
+
+S = T, então concluímos que são iguais.
 
 ### b) Three python methods that for a Elliptic Curve:
 
