@@ -1,0 +1,21 @@
+foi definido um tiago2023_apache_ssl.conf:
+
+(esquecime de tirar print, vou pedir o do pedro para depois adicionar)
+
+depois copiamos os server.crt e server.key para o diretorio /certs dando-lhes rename para com base na configuraçao acima
+
+ex. cp server.crt /certs/tiago2023.crt
+
+
+depois iniciamos o site com:
+$a2ensite tiago2023_apache_ssl.conf
+$service apache2 start
+
+
+conseguindo uma pagina de acesso nao seguro
+ imagem "task4_1"
+
+sendo preciso ir ao gestor de certificados do browser em questao para adicionar o certificado gerado anteriormente para conseguir um acesso que o browser considerase seguro
+
+imagem "task4_3"
+(esqueci-me de tirar print a pagina sem o aviso de perigo)
