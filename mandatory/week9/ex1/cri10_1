@@ -1,0 +1,23 @@
+What part of the certificate indicates this is a CA’s certificate?
+
+quando utilzamos o comando 'openssl x509 -in ca.crt -text -noout', temos um linha na data com :
+"CA:TRUE"
+imagem"ficha10_1"
+
+-----------------------------------
+What part of the certificate indicates this is a self-signed certificate?
+pelo facto de que na data do certificado o
+'Issuer: CN' ser igual a 'Subject: CN' com valor :
+'www.modelCA.com, O = Model CA LTD., C = US'
+
+imagem"ficha10_2"
+--------------------------------------
+
+In the RSA algorithm, we have a public exponent e, a private exponent d, a modulus n, and two secret numbers p and q, such that n = pq. Please identify the values for these elements in your certificate and key files.
+(tudo em scrren shot)
+apos executar o comando 'openssl x509 -in ca.crt -text -noout' conseguimos os valores desses dados como é possivel ver nas imagens seguintes
+
+imagens "e_d, n, primes"
+
+
+#o primeiro comando serviu para as duas primeiras perguntas
