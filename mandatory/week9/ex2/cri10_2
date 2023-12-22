@@ -1,0 +1,12 @@
+para gerar um CSr com 2 subdominios:
+openssl req -newkey rsa:2048 -sha256 \
+-keyout server.key  -out server.csr \
+-subj "/CN=www.tiago2023.com/O=tiago2023 Inc./C=US" \
+-passout pass:dees \
+-addext "subjectAltName = DNS:www.tiago2023.com,  \
+DNS:www.tiago2023A.com, \
+DNS:www.tiago2023B.com"
+
+executando o comando openssl req -in server.csr -text -noout conseguimos os dados como signature algorithm, primos, modulo e restantes ficam associados aos 3 subdominios
+
+imagem "task2"
