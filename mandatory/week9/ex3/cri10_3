@@ -1,0 +1,13 @@
+para gerar o certificado (server.csr) a partir de ca.crt e ca.key:
+openssl ca -config newopenssl.cnf -policy policy_anything \
+-md sha256 -days 3650 \
+-in server.csr -out server.crt -batch \
+-cert ca.crt -keyfile ca.key
+
+
+depois utilizando o comando "openssl x509 -in server.crt -text -noout"
+para alem de dados semelhantes aqueles que conseguimos nos exercicios anteriores é importante notar
+que na X509v3 Subject Alternative Name aparecem os 3 dominios anterormente adicionados mostrando que o
+certificado fica valido para qualquer um deles
+
+imagem "task3_2"
