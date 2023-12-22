@@ -1,0 +1,5 @@
+correndo o gen.py para gerar um ficheiro pw (ja existente) alice e bob contem algumas funçoes "duplicadas" para ler pw e obter as chaves de encriptaçao e autenticaçao, bem como funçoes para utilizar e confirmar essas chaves.
+
+na versao apresentada foi apenas enviada uma mensagem entre os dois, mas uma vez que foi possivel desincriptar corretamente essa mensagem enviada o desafio restante baseava-se na gestao da socket para tornar possivel uma conversa mais longa e fluida pois o metodo de checar a atuenticidade da mensagem e desincriptar a mesma seria o mesmo da primeira ou seja funcionaria.
+
+ps: se desse-mos diferentes keys eles nao eram capazes de comunicar, por isso podemos garantir que as mensagens estao seguras contra terceiros
